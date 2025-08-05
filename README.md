@@ -58,3 +58,6 @@ If you want to use your own sounds just replace on.wav and off.wav with your
 <img width="257" height="119" alt="image" src="https://github.com/user-attachments/assets/344cadd1-6bcb-4f4e-afda-87b50af1f046" />
 
 # Screenshots
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/d6ab2adf-b8f1-4c79-85d2-87f628b56819" />
+
