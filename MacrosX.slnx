@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MacrosX/MacrosX.vcxproj" Id="88ac30b4-0d26-4803-830a-6493c9b3e433" />
+</Solution>
