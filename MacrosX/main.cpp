@@ -6,7 +6,7 @@ int main()
 {
 	system("title MacrosX");
 
-	std::cout << "Macros X\nX = 0\nY = 3\nEnable = 0\n\nKeys\n\nToggleKey:INSERT\nButtonUp = Y + 1\nButtonDown = Y - 1 \nButtonRight = X + 1\nButtonleft = X - 1" << std::endl;
+	std::cout << "Macros X\nX = 0\nY = 3\nEnable = 0\nAutoPistol = 0\nBunnyHop = 0\n\nKeys\n\nToggleKey:INSERT\nAutoPistol:DELETE\nBunnyHop:HOME\nButtonUp = Y + 1\nButtonDown = Y - 1 \nButtonRight = X + 1\nButtonleft = X - 1\nHold Mouse 4 to use AutoPistol\n" << std::endl;
 
 	while (true) 
 	{
@@ -35,8 +35,20 @@ int main()
 			enable = !enable;
 			std::cout << "Enable:" << enable << std::endl;
 		}
+		if (GetAsyncKeyState(VK_HOME) & 1)
+		{
+			bhop = !bhop;
+			std::cout << "Bhop:" << bhop << std::endl;
+		}
+		if (GetAsyncKeyState(VK_DELETE) & 1)
+		{
+			autopistol = !autopistol;
+			std::cout << "AutoPistol:" << autopistol << std::endl;
+		}
 
 		g_Macros.MoveMouse();
+		g_Macros.BunnyHop();
+		g_Macros.AutoPistol();
 	}
 	return 0;
 }
